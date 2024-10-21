@@ -1,0 +1,128 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #76727290;
+    padding: 10px 20px;
+}
+
+.navbar-logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links li a:hover {
+    color: #008CBA;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    display: none;
+    list-style: none;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-menu li a:hover {
+    color: #008CBA;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-auth {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #008CBA;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+}
+
+.register-btn:hover {
+    background-color: #45a049;
+}
+
+.login-btn {
+    background-color: #008CBA;
+}
+
+.login-btn:hover {
+    background-color: #007bb5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-links, .navbar-auth {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    
+    .navbar-links.show, .navbar-auth.show {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hamburger {
+    display: none;
+}

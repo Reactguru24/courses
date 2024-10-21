@@ -1,0 +1,87 @@
+/* Container for the course information */
+.course-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style for the course image */
+  .course-info__image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 3px solid #007bff;
+  }
+  
+  /* Course title styling */
+  .course-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Pricing style */
+  .course-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Course details (lessons, weeks, description) */
+  .course-info p span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  .enroll-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change color on hover */
+  .enroll-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .course-info {
+      padding: 10px;
+    }
+  
+    .course-info__image {
+      max-width: 100%;
+    }
+  
+    .course-info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .course-info p {
+      font-size: 1rem;
+    }
+    .enroll-button {
+        width: 100%; /* Full width on smaller screens */
+      }
+  }
+ 
+
+
+  
+  

@@ -1,0 +1,23 @@
+
+
+.provision-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: nowrap;       
+    overflow-x: scroll;      
+    scrollbar-width: none;   
+}
+
+.provision-list::-webkit-scrollbar {
+    display: none;           
+}
+
+.provision-divider {
+    border: none;           
+    height: 2px;             
+    background-color: #e7e8ea; 
+    margin: 20px 0;          
+    width: 100%;             
+}

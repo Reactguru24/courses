@@ -1,0 +1,167 @@
+.learning-stats {
+    background-color: #55cdcf;
+    padding: 40px 20px;
+}
+
+.statistic {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.stat-left {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.stat-info h1 {
+    font-size: 78px;
+}
+
+.stat-info h3 {
+    font-size: 44px;
+}
+
+.stat-info h4 {
+    font-size: 34px;
+}
+
+.stat-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.stat-card h4 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.stat-card p {
+    margin: 10px 0 0;
+}
+
+.stat-info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Media Queries */
+
+/* Adjust for screens below 1024px */
+@media (max-width: 1024px) {
+    .statistic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-left {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .stat-info h1 {
+        font-size: 60px;
+    }
+
+    .stat-info h3 {
+        font-size: 36px;
+    }
+
+    .stat-info h4 {
+        font-size: 30px;
+    }
+
+    .stat-row {
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        width: 180px;
+        margin: 10px;
+    }
+}
+
+/* Adjust for screens below 768px */
+@media (max-width: 768px) {
+    .stat-info h1 {
+        font-size: 48px;
+    }
+
+    .stat-info h3 {
+        font-size: 32px;
+    }
+
+    .stat-info h4 {
+        font-size: 28px;
+    }
+
+    .stat-card {
+        width: 150px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Adjust for screens below 480px */
+@media (max-width: 480px) {
+    .stat-info h1 {
+        font-size: 36px;
+    }
+
+    .stat-info h3 {
+        font-size: 28px;
+    }
+
+    .stat-info h4 {
+        font-size: 24px;
+    }
+
+    .stat-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

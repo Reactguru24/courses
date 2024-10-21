@@ -1,0 +1,23 @@
+/* AllCourses.css */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Ensures even distribution of space between cards */
+    gap: 20px; /* Adds a gap between each card */
+    padding: 20px; /* Optional: Adds padding around the entire course list */
+    margin: 0 auto; /* Center-aligns the container */
+    max-width: 1200px; /* Optional: Sets a maximum width for the list */
+}
+.course-card {
+    margin: 0; /* Remove individual margins for cards */
+    /* Other existing styles */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .course-list {
+        justify-content: space-between; /* For smaller screens, adjust to reduce large spaces */
+    }
+    .course-card {
+        margin: 0;
+    }
+}

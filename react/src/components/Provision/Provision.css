@@ -1,0 +1,33 @@
+.provision-card {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    padding: 20px;
+    margin: 10px;
+}
+
+.provision-card:hover {
+    transform: translateY(-5px);
+}
+
+.provision-icon {
+    font-size: 50px;
+    margin: 20px 0;
+    color: #007BFF;
+}
+
+.provision-title {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.provision-description {
+    font-size: 16px;
+    color: #555;
+}
